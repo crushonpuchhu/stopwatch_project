@@ -1,0 +1,238 @@
+.main {
+    position: relative;
+    background-image: linear-gradient(150deg, #454569, #10112f);
+    width: 100vw;
+    height: 100vh;
+    margin: -7.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec {
+    position: relative;
+    background-color: #222342;
+    height: 550px;
+    width: 350px;
+    border-radius: 22.5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 3fr;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px 5px;
+}
+
+.kop {
+    position: relative;
+
+
+
+}
+
+.cloc_main {
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cloc_sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.cloc_thir {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.cloc_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_cantainer::-webkit-scrollbar {
+    display: none;
+}
+
+.clock_cantainer {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: #0f0f28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    border-radius: 100px;
+    border: 4px solid #151537;
+    box-shadow: 30px 25px 45px rgb(12, 12, 12, 0.9), -10px -10px 40px #364082;
+}
+
+.abo {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0.1));
+    transform-origin: top;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    visibility: hidden;
+    top: 100px;
+}
+.mover
+{   visibility: visible;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+.clock_area {
+    position: relative;
+    background-color: #151537;
+    height: 190px;
+    width: 190px;
+    border-radius: 100px;
+    background-image: url("css_image/watch.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clock_area p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p23::after {
+    content: ":";
+    position: relative;
+    left: 18px;
+    top: -2px;
+    font-size: 23px;
+}
+
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #3a3c65;
+    border-radius: 20px;
+    padding: 10px;
+    color: #44477a;
+    font-size: 16px;
+    width: 95px;
+}
+
+.btn1:hover {
+    background-color: #16163a;
+
+}
+
+.btn2:hover {
+    background-color: #16163a;
+}
+
+.btn3:hover {
+    background-color: #16163a;
+}
+
+.btn1 {
+    position: absolute;
+    left: 53px;
+    transition-duration: 0.5s;
+}
+
+.btn2 {
+    position: relative;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.btn3 {
+    color: #bd6434;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+.omm1 {
+    position: relative;
+    background-color: #44477a;
+    height: 1px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.omm2 {
+    position: relative;
+    height: 183px;
+    width: 320px;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+.omm2::-webkit-scrollbar {
+    display: none;
+}
+
+.lap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 100%;
+    border-bottom: 3px dotted #44477a;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.lap1 {
+    position: relative;
+    top: 16px;
+    color: #9f8331;
+}
+
+.lap2 {
+    position: relative;
+    top: 16px;
+    color: #9f8331;
+}
+
+.btnv
+{
+    visibility: hidden;
+}
+.btne
+{
+    visibility: visible;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
