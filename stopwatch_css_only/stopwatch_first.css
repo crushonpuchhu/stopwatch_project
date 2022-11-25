@@ -197,7 +197,8 @@
 }
 
 .omm2::-webkit-scrollbar {
-    display: none;
+   // display: none;
+
 }
 
 .lap {
